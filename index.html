@@ -58,18 +58,11 @@ var cardnum = 0;
 var cardnumpre = 0;
 
 $("#shuffle_btn").on("click",function(){
-    cardnum = Math.floor( Math.random() * (maxnum - minnum) ) + minnum ;
-    // alert(cardnum);    
+    cardnum = Math.floor( Math.random() * (maxnum) ) + minnum ;
 
-    // if (cardnum === cardnumpre) {
-    //     cardnum=cardnumpre+Math.floor( Math.random() * (maxnum - minnum) ) + minnum ;    
-    // }
 
     while (cardnum === cardnumpre) {
-        cardnum=cardnumpre+Math.floor( Math.random() * (maxnum - minnum) ) + minnum ; 
-        // IF(cardnum > maxnum){
-        // cardnum=cardnum-maxnum;
-        // }
+        cardnum=Math.floor( Math.random() * (maxnum) ) + minnum ; 
     }
 
     switch (cardnum){
