@@ -152,6 +152,7 @@ h1 {
         width:430px;
         margin: 0 calc((100% - 490px) / 2);
         background-size:85px;
+        /* text-transform:capitalize; */
     }
     
     .header-content {
