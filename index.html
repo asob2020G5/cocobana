@@ -114,42 +114,19 @@
         }
         
       if (spnum < sprate) {
-            if(cardnum > 4){cardnum=cardnum-1} 
+            cardnum=Math.ceil(cardnum/3) ; 
           switch (cardnum){
                     case 1:
                         $('p1').html('<img src="img/spcard1.jpg"  width=360px>');
-                        // tpara = 0.5;  
-                        // $('#timer').html("00:30");
                     break;
                     case 2:
                         $('p1').html('<img src="img/spcard2.jpg"  width=360px>');
-                        // tpara = 0.5;
-                        // $('#timer').html("00:30");
                     break;
                     case 3:
                         $('p1').html('<img src="img/spcard3.jpg"  width=360px>');
                     break;
-                    case 4:
-                        $('p1').html('<img src="img/spcard4.jpg"  width=360px>');
-                    break;
-                    case 5:
-                        $('p1').html('<img src="img/spcard1.jpg"  width=360px>');
-                        // tpara = 0.5;
-                        // $('#timer').html("00:30");
-                    break;
-                    case 6:
-                        $('p1').html('<img src="img/spcard2.jpg"  width=360px>');
-                        // tpara = 0.5;
-                        // $('#timer').html("00:30");
-                    break;
-                    case 7:
-                        $('p1').html('<img src="img/spcard3.jpg"  width=360px>');
-                    break;        
-                    case 8:
-                        $('p1').html('<img src="img/spcard4.jpg"  width=360px>');
-                    break;
                     default:
-                        $('p1').html('<img src="img/spcard4.jpg"  width=360px>');
+                        $('p1').html('<img src="img/spcard1.jpg"  width=360px>');
                 } ;
         } 
         else {
